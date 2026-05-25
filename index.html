@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>M & N Total Home Solutions</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f5f5f5;
+  color:#222;
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  background:#1f2d5a;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+header img{
+  width:250px;
+  max-width:90%;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+header h1{
+  font-size:3rem;
+  margin-bottom:10px;
+  color:#e7c86b;
+}
+
+/* NAV */
+nav{
+  background:#162047;
+  padding:15px;
+  text-align:center;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  padding:80px 20px;
+  text-align:center;
+  background:white;
+}
+
+/* SERVICES */
+.services{
+  padding:60px 20px;
+  background:#f0f2f7;
+}
+
+.service-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  gap:25px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.service-box{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* GALLERY (NEW IMPROVED BUT SAME LOOK) */
+.gallery{
+  padding:60px 20px;
+  background:white;
+}
+
+.gallery-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:50px;
+}
+
+.gallery-box{
+  background:#f5f5f5;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.before-after{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.before-after img{
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  border-radius:12px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.before-after img:hover{
+  transform:scale(1.02);
+}
+
+/* ABOUT */
+.about{
+  padding:60px 20px;
+  background:white;
+  text-align:center;
+}
+
+/* CONTACT */
+.contact{
+  background:#1f2d5a;
+  color:white;
+  padding:60px 20px;
+  text-align:center;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  background:#e7c86b;
+  color:#1f2d5a;
+  padding:15px 30px;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* LIGHTBOX (NEW FEATURE) */
+#lightbox{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+#lightbox img{
+  max-width:95%;
+  max-height:90%;
+  border-radius:12px;
+}
+
+#closeBtn{
+  position:absolute;
+  top:20px;
+  right:30px;
+  color:white;
+  font-size:50px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="images/logo.png" alt="Logo">
+  <h1>M & N Total Home Solutions</h1>
+      <p> Professional home renovation services specializing in flooring and bathroom renovations with quality craftsmanship you can trust.</p>
+</header>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Flooring & Bathroom Experts</h2>
+</section>
+
+<!-- SERVICES (YOUR ORIGINAL STYLE KEPT) -->
+<section class="services" id="services">
+  <div class="service-container">
+
+    <div class="service-box"><h3>Flooring Installation: Professional flooring installation services for residential and commercial properties. 
+      Hardwood, vinyl plank, laminate, tile, and custom flooring solutions installed with precision and attention to detail.
+    </h3></div>
+    <div class="service-box"><h3>Bathroom Renovations: Bathroom remodels with quality materials and craftsmanship.</h3></div>
+    <div class="service-box"><h3>Painting & Finishing: Professional painting and finishing services for residential and properties.</h3></div>
+    <div class="service-box"><h3>Plumbing: Professional plumbing services for residential and commercial properties.</h3></div>
+    <div class="service-box"><h3>Drywall Services: Drywall installation, patchwork, repairs, texture matching, and finishing for residential spaces.</h3></div>
+
+  </div>
+</section>
+
+<!-- GALLERY (FIXED + WORKING ON GITHUB) -->
+<section class="gallery" id="gallery">
+
+  <h2 style="text-align:center; margin-bottom:40px;">Before & After Projects</h2>
+
+  <div class="gallery-container">
+
+    <div class="gallery-box">
+      <h3>Bathroom Renovation</h3>
+
+      <div class="before-after">
+        <div>
+          <img src="images/bathroom-before.jpg" alt="Bathroom Before">
+          <p>Before</p>
+        </div>
+
+        <div>
+          <img src="images/bathroom-after.jpg" alt="Bathroom After">
+          <p>After</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-box">
+      <h3>Flooring Installation</h3>
+
+      <div class="before-after">
+        <div>
+          <img src="images/floor-before.jpg" alt="Floor Before">
+          <p>Before</p>
+        </div>
+
+        <div>
+          <img src="images/floor-after.jpg" alt="Floor After">
+          <p>After</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2>Why Choose Us?</h2>
+  <p> Micheal Valentine is a trusted name in the home renovation industry. With over 30+ years of experience, he brings a commitment to quality and customer satisfaction. 
+      His reliable workmanship, clean finishes, and quality renovations you can trust. 
+      M & N Total Home Solutions is committed to delivering dependable workmanship, honest communication, and beautiful results. 
+      Whether you need brand-new flooring or a full bathroom remodel, we bring experience, professionalism, and attention to detail to every project.</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+
+  <p><strong>Phone:</strong> (321) 288-1439</p>
+  <p><strong>Email:</strong> restore@mntotalhomesolutions.biz</p>
+
+  <a class="btn" href="mailto:restore@mntotalhomesolutions.biz">
+    Book an Estimate
+  </a>
+</section>
+
+<footer>
+  © 2026 M & N Total Home Solutions
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span id="closeBtn">&times;</span>
+  <img id="lightboxImg">
+</div>
+
+<script>
+const images = document.querySelectorAll('.before-after img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const closeBtn = document.getElementById('closeBtn');
+
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+  });
+});
+
+closeBtn.onclick = () => lightbox.style.display = 'none';
+
+lightbox.onclick = (e) => {
+  if(e.target === lightbox) lightbox.style.display = 'none';
+};
+</script>
+
+</body>
+</html>
